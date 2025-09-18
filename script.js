@@ -9,3 +9,17 @@ for (i = 0; i <16; i++) {
     }
     container.appendChild(row);
 }
+
+const grids = document.querySelectorAll('.col');
+
+grids.forEach((elem) => {
+    elem.addEventListener('mouseover', () => {
+        elem.classList.toggle('on-hover')
+    })
+})
+
+grids.forEach((elem) => {
+    elem.addEventListener('mouseout', () => {
+        elem.classList.toggle('on-hover')
+    })
+})
